@@ -32,7 +32,7 @@ def send_message_and_exit(house_id, myself, other_contact):
 
 
 def main():
-    itchat.auto_login(enableCmdQR=2)
+    itchat.auto_login(enableCmdQR=True)
     myself = itchat.search_friends()
     other_contact = itchat.search_friends(name="may")[0]
     house_id = 62264440
